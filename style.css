@@ -1,0 +1,347 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* Basic resets and default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #5e077d; /* Consistent background color */
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #6727b0; /* Darker Blue for the header */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #ecf0f1; /* Light Text Color for Header Links */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #f39c12; /* Hover Effect Color */
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Container for central alignment */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* Background color for the content container */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Main content padding */
+.main {
+    padding: 20px;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 40px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ecf0f1; /* Unified background color for sections */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Home section styles */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.devinfo {
+    max-width: 600px;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.devinfo .hello {
+    font-size: 24px;
+}
+
+.devinfo .name {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.devinfo .about {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.devinfo .moreabout {
+    margin-bottom: 20px;
+}
+
+.devinfo .buttons button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    background-color: #e67e22; /* Orange for Buttons */
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.devinfo .buttons button:hover {
+    background-color: #f39c12; /* Hover Effect Color */
+    color: #fff;
+}
+
+.devpic img {
+    max-width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Section-specific styles */
+#about h2,
+#projects h2,
+#skills h2,
+#resume h2,
+.contact-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+#skills p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.skills-list li {
+    background-color: #1a73e8; /* Unified background color for skills */
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.skills-list li:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+}
+
+/* Resume section styles */
+#resume p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+#resume .resume-button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#resume .resume-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #e67e22; /* Orange for Resume Button */
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+#resume .resume-button:hover {
+    background-color: #f39c12; /* Hover Effect Color */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+#resume .resume-button:active {
+    background-color: #e67e22;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* About and Projects section styles */
+#about .about-container,
+#projects .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#about .about-image img,
+#projects img {
+    max-width: 220px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#about .about-text p,
+#projects .project p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Contact section styles */
+#contact {
+    background-color: #ecf0f1; /* Very Light Gray for Contact section */
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-item h3 {
+    font-size: 22px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.contact-item a {
+    display: block;
+    padding: 10px 20px;
+    margin: 10px auto;
+    width: fit-content;
+    color: #ffffff;
+    background-color: #3498db; /* Blue for Contact Links */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-item a:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.contact-item a.github {
+    background-color: #333; /* GitHub Color */
+}
+
+.contact-item a.github:hover {
+    background-color: #555;
+}
+
+.contact-item a.linkedin {
+    background-color: #0077b5; /* LinkedIn Color */
+}
+
+.contact-item a.linkedin:hover {
+    background-color: #005f87;
+}
+
+/* Quick Links and Social Links styles */
+.quick-links,
+.social-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.quick-links li,
+.social-links li {
+    margin-bottom: 15px;
+}
+
+.quick-links a,
+.social-links a {
+    color: #3498db; /* Blue for Links */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.quick-links a:hover,
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.social-links a {
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #2c3e50; /* Darker Blue for Social Links Hover */
+}
